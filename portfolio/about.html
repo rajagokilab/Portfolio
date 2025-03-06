@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Card</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <style>
+        #skills{
+            background-color: antiquewhite;
+        }
+        .card{
+    border: 2px  black ;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(61, 60, 60, 0.716);
+    color: white;
+    width:200px;
+    height: 250px;
+    border-radius: 10%;
+    /* width: 250px; */
+    /* text-align: center; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+.card-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+gap: 20px;
+justify-content: center; /* Centers horizontally */
+align-items: center; /* Centers vertically */
+/* background-color: azure; */
+margin: auto; /* Centering the container itself */
+/* padding: 20px; */
+margin: auto 50px;
+/* min-height: 100vh;  */
+}
+span{
+    color: rgb(250, 251, 253);
+    border: 1px solid rgb(5, 136, 250);
+    background-color: rgb(0, 137, 242);
+    border-radius: 30%;
+    align-items: center;
+    text-align: center;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.card .icon {
+    font-size: 50px;
+    color: #f1f1f1;
+    margin-bottom: 15px;
+}
+.card h3 {
+    font-size: 1.5rem;
+    color:white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+#skills{
+    color:white
+}
+
+    </style>
+</head>
+<body>
+
+    <section id="skills">
+        <div class="myskills">
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="card-container">
+            <!-- SQL Card -->
+            <div class="card">
+                <span class="material-icons icon">storage</span>
+                <h3>SQL</h3>
+                <p>Skilled in writing queries, managing databases, and optimizing performance using SQL.</p>
+            </div>
+
+            <!-- Python Card -->
+            <div class="card">
+                <span class="material-icons icon">code</span>
+                <h3>Python</h3>
+                <p>Experience in data analysis, automation, and backend development using Python.</p>
+            </div>
+
+            <!-- Tableau Card -->
+            <div class="card">
+                <span class="material-icons icon">bar_chart</span>
+                <h3>Tableau</h3>
+                <p>Capable of creating interactive dashboards and visualizations for data insights.</p>
+            </div>
+
+            <!-- Power BI Card -->
+            <div class="card">
+                <span class="material-icons icon">show_chart</span>
+                <h3>Power BI</h3>
+                <p>Expert in data visualization and report creation with Power BI for business intelligence.</p>
+            </div>
+
+            <!-- HTML & CSS Card -->
+            <div class="card">
+                <span class="material-icons icon">language</span>
+                <h3>HTML & CSS</h3>
+                <p>Proficient in structuring & styling web pages responsive design.</p>
+            </div>
+
+            <!-- JavaScript Card -->
+            <div class="card">
+                <span class="material-icons icon">javascript</span>
+                <h3>JavaScript</h3>
+                <p>Developing dynamic and interactive web applications using JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
